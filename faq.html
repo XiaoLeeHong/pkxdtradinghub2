@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | PKXD Hub</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<canvas id="galaxy"></canvas>
+
+<div class="page-center">
+
+<div class="cosmos-box">
+
+<h1>❓ PKXD Trading FAQ</h1>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<button class="faq-question">Is this server official?</button>
+<div class="faq-answer">
+This is a community-built trading hub. Not affiliated with PKXD developers.
+Built by experienced players for secure and fair trading.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">How does trading work?</button>
+<div class="faq-answer">
+Post what you have. State what you want.
+Negotiate clearly. Screenshot agreements.
+Confirm carefully in-game.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">Are scams allowed?</button>
+<div class="faq-answer">
+Absolutely not. Scammers are permanently banned.
+However, completed in-game trades cannot be reversed.
+Think before confirming.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">Is cross-trading allowed?</button>
+<div class="faq-answer">
+No cross-trading. PKXD items only.
+No Robux. No gift cards. No external deals.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">How do I avoid scams?</button>
+<div class="faq-answer">
+Never rush. Avoid “too good to be true” offers.
+Record proof. Stay logical. Ask staff if unsure.
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">How do I become staff?</button>
+<div class="faq-answer">
+Be active. Help members. Maintain clean behavior.
+Spamming for staff decreases your chances.
+</div>
+</div>
+
+</div>
+
+
+<a href="index.html" class="btn faq-btn">⬅ Back Home</a>
+
+</div>
+</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.classList.toggle("open");
+  });
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

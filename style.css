@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.center-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.cosmos-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 35px 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.cosmic-btn {
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.cosmic-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px cyan;
+}
+
+.owner { background: linear-gradient(45deg,#ff9800,#ff5722); }
+.admin { background: linear-gradient(45deg,#00e5ff,#2979ff); }
+.mod { background: linear-gradient(45deg,#00c853,#64dd17); }
+.helper { background: linear-gradient(45deg,#f50057,#ff4081); }
+
+.role-display {
+  margin-top: 15px;
+  min-height: 70px;
+  padding: 15px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.owner-text {
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.cosmic-badge {
+  margin: 15px 0;
+  padding: 10px;
+  background: linear-gradient(45deg, #00e5ff, #8e2de2);
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  color: cyan;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+}
+
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.cosmos-box {
+  width: 100%;
+  max-width: 430px;
+  padding: 35px 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
+}
+
+.logo-img {
+  width: 160px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 15px 0 25px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stat-box h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+}
+
+.main-buttons,
+.extra-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 14px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px cyan;
+}
+
+.join-btn {
+  background: linear-gradient(45deg,#00e5ff,#2979ff);
+}
+
+.owner-btn {
+  background: linear-gradient(45deg,#ff9800,#ff5722);
+}
+
+.staff-btn {
+  background: linear-gradient(45deg,#00c853,#64dd17);
+}
+
+.faq-btn {
+  background: linear-gradient(45deg,#f50057,#ff4081);
+}
+
+.neon-mode {
+  background: linear-gradient(45deg,#8e2de2,#00e5ff);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* FAQ STYLING */
+
+.faq-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.faq-question:hover {
+  box-shadow: 0 0 15px cyan;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 14px;
+  opacity: 0.85;
+  padding: 0 10px;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+  padding: 10px;
+}

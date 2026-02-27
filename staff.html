@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff | PKXD Hub</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="galaxy"></canvas>
+
+<div class="center-container">
+
+<div class="cosmos-box">
+
+<h1>👑 Staff Hierarchy</h1>
+<p class="subtitle">Tap a role to reveal authority and powers.</p>
+
+<div class="staff-grid">
+
+<button class="cosmic-btn owner" onclick="showRole('owner')">👑 Owner</button>
+<button class="cosmic-btn admin" onclick="showRole('admin')">⚡ Admin</button>
+<button class="cosmic-btn mod" onclick="showRole('mod')">🛡 Moderator</button>
+<button class="cosmic-btn helper" onclick="showRole('helper')">✨ Helper</button>
+
+</div>
+
+<div id="roleInfo" class="role-display"></div>
+
+<a href="index.html" class="back-btn">⬅ Back Home</a>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
