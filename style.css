@@ -13,8 +13,12 @@ body {
 
 h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 32px;
-  margin-bottom: 15px;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  text-shadow: 0 0 10px rgba(0,255,255,0.6);
 }
 
 .subtitle {
@@ -141,9 +145,10 @@ body {
 }
 
 .desc {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.7;
   margin: 15px 0 25px;
+  opacity: 0.9;
 }
 
 .stats {
